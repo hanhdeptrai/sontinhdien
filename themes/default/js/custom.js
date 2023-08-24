@@ -1,0 +1,10 @@
+/**
+ * TMS Content Management System
+ * @version 4.x
+ * @author TMS Holdings <contact@thuongmaiso.vn>
+ * @copyright (C) 2009-2021 TMS Holdings. All rights reserved
+ * @license GNU/GPL version 2 or any later version
+ * @see https://thuongmaiso.vn
+ */
+
+/* Các tùy chỉnh JS của giao diện nên để vào đây */

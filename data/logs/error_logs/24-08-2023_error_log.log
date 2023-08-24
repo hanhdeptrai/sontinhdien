@@ -1,0 +1,76 @@
+[Thu, 24 Aug 2023 10:59:49 +0700] [localhost] [::1] [Notice(8): Undefined index: captcha_area_comm] [FILE: /modules/comment/comment.php] [LINE: 396]
+[Thu, 24 Aug 2023 11:07:47 +0700] [localhost] [::1] [User Error(256): PDOException Object
+(
+    [message:protected] => SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_ocopp.tms_vi_photos_category' doesn't exist
+    [string:Exception:private] => 
+    [code:protected] => 42S02
+    [file:protected] => C:\xampp\htdocs\shop\vendor\vinades\nukeviet\Core\Database.php
+    [line:protected] => 528
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => C:\xampp\htdocs\shop\vendor\vinades\nukeviet\Core\Database.php
+                    [line] => 528
+                    [function] => query
+                    [class] => PDO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT COUNT(*) FROM tms_vi_photos_album a  LEFT JOIN tms_vi_photos_category c ON (c.category_id=a.category_id) WHERE (a.name REGEXP 's(o|ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ)n t(i|í|ì|ỉ|ĩ|ị)nh (d|đ|Đ)(i|í|ì|ỉ|ĩ|ị)(e|é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ)n' OR a.description REGEXP 's(o|ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ)n t(i|í|ì|ỉ|ĩ|ị)nh (d|đ|Đ)(i|í|ì|ỉ|ĩ|ị)(e|é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ)n')	AND a.status=1
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => C:\xampp\htdocs\shop\modules\photos\search.php
+                    [line] => 16
+                    [function] => query
+                    [class] => NukeViet\Core\Database
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT COUNT(*) FROM tms_vi_photos_album a  LEFT JOIN tms_vi_photos_category c ON (c.category_id=a.category_id) WHERE (a.name REGEXP 's(o|ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ)n t(i|í|ì|ỉ|ĩ|ị)nh (d|đ|Đ)(i|í|ì|ỉ|ĩ|ị)(e|é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ)n' OR a.description REGEXP 's(o|ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ)n t(i|í|ì|ỉ|ĩ|ị)nh (d|đ|Đ)(i|í|ì|ỉ|ĩ|ị)(e|é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ)n')	AND a.status=1
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => C:\xampp\htdocs\shop\modules\seek\funcs\main.php
+                    [line] => 100
+                    [args] => Array
+                        (
+                            [0] => C:\xampp\htdocs\shop\modules\photos\search.php
+                        )
+
+                    [function] => include
+                )
+
+            [3] => Array
+                (
+                    [file] => C:\xampp\htdocs\shop\index.php
+                    [line] => 364
+                    [args] => Array
+                        (
+                            [0] => C:\xampp\htdocs\shop\modules\seek\funcs\main.php
+                        )
+
+                    [function] => require
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42S02
+            [1] => 1146
+            [2] => Table 'db_ocopp.tms_vi_photos_category' doesn't exist
+        )
+
+)
+] [FILE: /index.php] [LINE: 391]
+[Thu, 24 Aug 2023 11:08:08 +0700] [localhost] [::1] [Notice(8): Undefined index: alias] [FILE: /modules/photos/blocks/global.block_photos_new.php] [LINE: 161]
+[Thu, 24 Aug 2023 11:31:35 +0700] [localhost] [::1] [Run-time notices(8192): The each() function is deprecated. This message will be suppressed on further calls] [FILE: /modules/photos/admin/setting.php] [LINE: 200]
